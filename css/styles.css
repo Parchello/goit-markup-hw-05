@@ -42,7 +42,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-slate);
   background-color: var(--color-white);
-  padding: 72px;
+  padding-top: 72px;
 }
 .list {
   list-style: none;
