@@ -154,10 +154,10 @@ HEADER
   text-decoration: none;
   color: var(--color-slate);
   font-style: normal;
-   transition-property: color;
+  transition-property: color;
   transition: color var(--animation-cubic);
 }
-}
+
 .nav-mail:hover,
 :focus {
   color: var(--color-ocean);
@@ -418,8 +418,8 @@ Section customers
   justify-content: center;
   align-items: center;
   color: var(--color-light-slate);
-  transition-property: border-color;
-  transition: border-color var(--animation-cubic);
+  transition-property: border-color, color;
+  transition: border-color var(--animation-cubic), color var(--animation-cubic);
 }
 .company-icon {
   fill: currentColor;
@@ -587,6 +587,8 @@ PORTFOLIO
 .card-link {
   text-decoration: none;
   display: block;
+  transition-property: box-shadow;
+  transition: box-shadow var(--animation-cubic);
 }
 .card-link:hover,
 .card-link:focus {
@@ -612,9 +614,7 @@ PORTFOLIO
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
   transform: translateY(100%);
   background-color: var(--color-iris);
   transition: transform var(--animation-cubic);
