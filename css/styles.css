@@ -141,7 +141,6 @@ HEADER
   height: 4px;
   border-radius: 2px;
   bottom: -1px;
-  background-color: var(--color-ocean);
 }
 .nav-link.active::after {
   background-color: var(--color-ocean);
