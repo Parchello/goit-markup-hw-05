@@ -642,22 +642,31 @@ modal window
   top: 50%;
   left: 50%;
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   border-radius: 4px;
   background-color: var(--color-dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translateX(-50%) translateY(-50%);
+  transition-property: transform;
+  transition: transform var(--animation-cubic);
 }
 .modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   border-radius: 50%;
+  background-color: var(--color-dairy);
+  padding: 0;
 
   width: 24px;
   height: 24px;
   top: 24px;
   right: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: background-color;
+  transition: background-color var(--animation-cubic);
 }
 .is-hidden {
   opacity: 0;
@@ -668,8 +677,9 @@ modal window
 .modal-close-btn:focus {
   background-color: var(--color-ocean);
   fill: var(--color-white);
+  border: none;
 }
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-  fill: var(--color-white);
+.modal-close-icon {
+  transition-property: fill;
+  transition: fill var(--animation-cubic);
 }
